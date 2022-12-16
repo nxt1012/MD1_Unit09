@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let input = prompt("Nhập vào một ký tự");
+  let char = input.trim().charAt(0)
+  alert(isANumber(char));
+  function isANumber (char) {
+    return /^.*?[0-9]$/.test(char)
+  }
+</script>
+</body>
+</html>

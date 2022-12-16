@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let r = +prompt("Nhập bán kính hình tròn");
+  let area = 0;
+  let circumference = 0;
+  alert(`Hình tròn có bán kính ${r} có diện tích là ${calArea(r)} và chu vi10 là ${calCircumference(r)}`)
+  function calArea(radius) {
+    area = radius * radius * 3.14;
+    return area;
+  }
+  function calCircumference(radius){
+    circumference = radius * 2 * 3.14;
+    return circumference;
+  }
+</script>
+</body>
+</html>

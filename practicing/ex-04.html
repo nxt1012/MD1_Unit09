@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let result;
+  alert("Khi chương trình chưa chạy, biến result có giá trị là " + result)
+  function addNumber() {
+    alert("Khi hàm bắt đầu chạy, biến result có giá trị là  " + result)
+    firstNum = 4;
+    secondNum = 8;
+    result = firstNum + secondNum;
+    alert("Sau khi tính toán, biến result có giá trị là " + result)
+    return result;
+  }
+  alert("Trước khi gọi hàm, khi khởi tạo, biến result có giá trị là " + result)
+  result = 0;
+  alert("Ngay trước khi gọi hàm, biến result có giá trị là " + result)
+  result = addNumber();
+</script>
+</body>
+</html>

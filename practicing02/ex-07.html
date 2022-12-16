@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt("Nhập vào 2 số nguyên bất kỳ, các số cách nhau bởi dấu cách");
+    printReverseArray(str);
+    function printReverseArray(str) {
+        let arr = str.split(" ");
+        document.write(`Vị trí ban đầu của hai số là: <br> ${arr}<br>`)
+        arr.reverse();
+        document.write(`Vị trí hai số sau khi sắp xếp là: <br> ${arr}`)
+    }
+</script>
+</body>
+</html>

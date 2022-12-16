@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="footInput">In Feet</label>
+<input type="text" id="footInput"><button id="foot" onclick="convert(this.id)">Foot ==> Meter</button><br>
+<label for="meterInput">In Meter</label>
+<input type="text" id="meterInput"><button id="meter" onclick="convert(this.id)">Meter ==> Foot</button>
+<script>
+  function convert(id){
+    switch (id){
+      case "foot":
+        let foot = +document.getElementById("footInput").value
+        footToMeter(foot);
+        break;
+      case "meter":
+        let meter = +document.getElementById("meterInput").value
+        meterToFoot(meter);
+        break;
+    }
+  }
+  function footToMeter(foot){
+    document.getElementById("meterInput").value = foot*0.305 + " m";
+  }
+  function meterToFoot(meter){
+    document.getElementById("footInput").value = meter*3.279 + " ft";
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let str = prompt("Nhập vào một mảng ký tự, mỗi ký tự cách nhau bởi dấu cách");
+  let character = prompt("Nhập vào một ký tự để xem nó có nằm trong mảng hay không")
+  let count = 0;
+  checkIncluded(str, character);
+  function checkIncluded (str, char){
+    let arr = str.split(" ");
+    if (arr.includes(char)) {
+      for (let i = 0; i < arr.length; i++) {
+        if (char === arr[i]) {
+          count++;
+        }
+      }
+
+      return count;
+    } else {
+      return str.indexOf(char);
+    }
+
+  }
+</script>
+</body>
+</html>

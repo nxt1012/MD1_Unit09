@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="userInput">Nhập số bất kỳ trong khoảng từ 0-10000 để kiểm tra</label>
+<input type="text" id="userInput">
+<button onclick="check()">Kiểm tra</button>
+<p id="result"></p>
+<script>
+    function check(){
+        let input = +document.getElementById("userInput").value;
+        let ceil = Math.floor(Math.sqrt(input));
+        isPrime(input);
+        check = isPrime(input);
+        function isPrime(number){
+            if (number <2){
+                check = false;
+            }else if (number === 2 || number === 3) {
+                check = true
+            } else {
+                for (let i = 3; i < ceil; i+2){
+                    if (number % i === 0) {
+                        check = true;
+                        return;
+                    } else check = false
+                }
+            }
+        }
+        if (check)
+            document.getElementById("result").innerText = `${input} không phải là số nguyên tố`
+        else
+            document.getElementById("result").innerText = `${input} là số nguyên tố`
+
+    }
+</script>
+</body>
+</html>

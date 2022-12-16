@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    label {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    button {
+      background: #0db20d;
+      color: white;
+      border: none;
+      width: 50px;
+      height: 35px;
+      border-radius: 10%;
+    }
+    div#addNewProduct {
+      background: #d5d5d5;
+      line-height: 50px;
+      width: 300px;
+    }
+    div table {
+      background: #d5d5d5;
+      line-height: 50px;
+      width: 100%;
+      border: none;
+    }
+    input {
+      margin-left: 20px;
+      height: 30px;
+      border-radius: 5px;
+    }
+    table {
+      width: 100%;
+    }
+    tr:nth-child(even) {background: #FFF}
+    tr:nth-child(odd) {background: #d5d5d5}
+    th {
+      background: #fff;
+    }
+  </style>
+</head>
+<body>
+<h1>Product Management</h1>
+<form>
+<label for="input">Add New Product</label><br>
+<div id="addNewProduct">
+<input type="text" id="input" placeholder="New Product">
+<button onclick="addProduct()">Add</button>
+</div>
+</form>
+<label for="input">Display All Product</label><br>
+<div>
+<form>
+  <table>
+    <tr>
+      <th colspan="2" style="text-align: left">Product Name</th>
+      <th></th>
+      <th id="productQuantity" style="text-align: right">9 products</th>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: left">Sony Xperia</td>
+      <td><button>Edit</button></td>
+      <td><button>Delete</button></td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: left">Samsung Galaxy</td>
+      <td><button>Edit</button></td>
+      <td><button>Delete</button></td>
+    </tr>
+  </table>
+</form>
+</div>
+</body>
+</html>
